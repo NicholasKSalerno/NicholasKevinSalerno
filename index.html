@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nicholas Salerno - GIS Lab Report</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #004d66;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+    .map-section {
+      margin-bottom: 60px;
+    }
+    nav {
+      background-color: #f2f2f2;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #004d66;
+    }
+  </style>
+</head>
+<body>
+  <h1>Nicholas Salerno - GIS Lab Report Portfolio</h1>
+  <p>This site showcases three GIS mapping projects developed in GUS 5062. Each map addresses a specific urban or environmental planning problem using spatial analysis techniques.</p>
+
+  <nav>
+    <a href="#flint">Flint Water Crisis</a>
+    <a href="#miami">Miami Housing & Population</a>
+    <a href="#philly">Healthy Food Store Site</a>
+  </nav>
+
+  <div id="flint" class="map-section">
+    <h2>1. Flint, Michigan Lead Service Line Risk</h2>
+    <img src="images/flint_lead_risk_map.jpg" alt="Flint Lead Risk Map">
+    <p>
+      This map addresses the Flint, Michigan water crisis by identifying areas at higher risk of lead exposure through aging service lines. Buffer analysis was used to assess proximity of schools and populations to known or suspected lead pipes. This approach helps prioritize neighborhoods for infrastructure replacement and public health outreach.
+    </p>
+    <ul>
+      <li>Buffer Analysis</li>
+      <li>Spatial Join for demographic context</li>
+      <li>Symbology for risk highlighting</li>
+      <li>Layout design for clear communication</li>
+    </ul>
+  </div>
+
+  <div id="miami" class="map-section">
+    <h2>2. Miami Population and Housing Density</h2>
+    <img src="images/miami_density_map.jpg" alt="Miami Population Density Map">
+    <img src="images/miami_vacant_housing_map.jpg" alt="Miami Vacant Housing Map">
+    <p>
+      This map set explores population and housing data in Northern Miami. By comparing tract-level and block-level data, it highlights how scale influences spatial understanding. Areas with high population density and high vacancy rates are identified to inform urban planning and resource allocation.
+    </p>
+    <ul>
+      <li>Choropleth Mapping</li>
+      <li>Ecological Fallacy and MAUP analysis</li>
+      <li>Symbology and layout for multiple layers</li>
+      <li>Granular spatial comparisons</li>
+    </ul>
+  </div>
+
+  <div id="philly" class="map-section">
+    <h2>3. Healthy Food Store Site Selection - Philadelphia</h2>
+    <img src="images/philly_candidate_area_map.jpg" alt="Candidate Area for Healthy Food Store">
+    <p>
+      This project identifies optimal locations in Philadelphia for a new healthy food store. Areas were selected based on proximity to transit, inclusion in Empowerment Zones, and distance from existing food resources. A final candidate zone in West Philadelphia emerged as the top recommendation based on accessibility and unmet demand.
+    </p>
+    <ul>
+      <li>Buffer Analysis (Transit and Exclusion Zones)</li>
+      <li>Union, Intersect, and Erase tools</li>
+      <li>Area calculation for best fit</li>
+      <li>Professional cartographic design</li>
+    </ul>
+  </div>
+
+  <footer>
+    <hr />
+    <p>© 2025 Nicholas Salerno | GUS 5062 | Contact: your_email@example.com</p>
+  </footer>
+</body>
+</html>
