@@ -1,4 +1,138 @@
----
-layout: home
-background: '/img/bg-index.jpg'
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nicholas Salerno - GIS Lab Report</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      color: #000000;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .map-section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      display: block;
+      margin: 15px auto;
+      border-radius: 8px;
+    }
+
+    .map-description {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Nicholas Salerno - GIS Lab Report Portfolio</h1>
+  <p>This site showcases three GIS mapping projects developed in GUS 5062. Each map addresses a specific urban or environmental planning problem using spatial analysis techniques.</p>
+
+  <nav>
+    <a href="#flint">Flint Water Crisis</a>
+    <a href="#miami">Miami Housing & Population & 2020 Pennsylvania Presidential Election</a>
+    <a href="#philly">Healthy Food Store Site</a>
+  </nav>
+
+  <div id="flint" class="map-section">
+    <h2>1. Flint, Michigan Lead Service Line Risk</h2>
+    <img src="Maps/Layout.jpg" alt="Flint Lead Risk Map">
+    <div class="map-description">
+      <p>This map analyzes public health risk in Flint, Michigan by identifying areas most likely to be impacted by lead-contaminated service lines. Using spatial data from suspected lead pipe locations and school locations, buffer zones were created to assess which areas are most vulnerable. The resulting map highlights school-adjacent neighborhoods where children may be at higher risk for lead exposure. These visualizations support targeted remediation and public health interventions in the most affected zones. The analysis also reinforces calls for infrastructure upgrades and government accountability in Flint's water crisis.</p>
+      <p><strong>GIS Tools/Skills Used:</strong></p>
+      <ul>
+        <li>Buffer analysis around lead service lines and school facilities</li>
+        <li>Spatial joins to combine infrastructure data with demographic geography</li>
+        <li>Use of symbology to highlight high-risk zones</li>
+        <li>Map layout techniques to clarify spatial overlap and urgency</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="miami" class="map-section">
+    <h2>2. Miami Population and Housing Density & Pennsylvania 2020 Election</h2>
+    <img src="Maps/Screenshot 2025-06-20 133629.png" alt="Percent of Vacant Housing Per Tract">
+    <p class="map-description">This map displays the percent of vacant housing per tract.</p>
+
+    <img src="Maps/Screenshot 2025-06-20 133657.png" alt="Percent Occupied Housing Per Tract">
+    <p class="map-description">This map displays the percent of occupied housing per tract.</p>
+
+    <img src="Maps/Screenshot 2025-06-20 133727.png" alt="Population Density Per Tract">
+    <p class="map-description">This map displays the population density per tract.</p>
+
+    <img src="Maps/Screenshot 2025-06-20 133749.png" alt="Population Density Per Block">
+    <p class="map-description">This map displays the population density per block.</p>
+
+    <img src="Maps/Screenshot 2025-06-20 133759.png" alt="Pennsylvania 2020 Presidential Election Results by County">
+    <p class="map-description">This map displays the 2020 Pennsylvania Presidential Election Results by County.</p>
+
+    <div class="map-description">
+      <p>This set of maps investigates population density and housing occupancy in Miami at different spatial resolutions, revealing disparities that might otherwise be obscured by aggregated data. Tract-level maps show broad regional trends, while block-level analysis exposes local hotspots of overcrowding or vacancy. These maps demonstrate the importance of geographic scale in urban planning and statistical analysis. By comparing population density with occupied and vacant housing rates, the maps highlight neighborhoods with both high population concentration and underutilized housing — ideal for targeted development or affordable housing efforts. This work reinforces the need to avoid ecological fallacies and the Modifiable Areal Unit Problem (MAUP) in policy decisions.</p>
+      <p><strong>GIS Tools/Skills Used:</strong></p>
+      <ul>
+        <li>Choropleth mapping of population and housing by census tract and block</li>
+        <li>Use of multiple spatial resolutions to compare aggregated vs. localized patterns</li>
+        <li>Understanding and application of MAUP and ecological fallacy concepts</li>
+        <li>Layer symbology, classification schemes, and export-ready layouts</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="philly" class="map-section">
+    <h2>3. Healthy Food Store Site Selection - Philadelphia</h2>
+    <img src="Maps/Screenshot 2025-06-20 134134.png" alt="Empowerment Zones, Transits Access and Healthy Food Locations in Philadelphia">
+    <p class="map-description">This map displays the empowerment zones, transit access and healthy food locations in Philadelphia.</p>
+
+    <img src="Maps/Screenshot 2025-06-20 134148.png" alt="Areas Where Stores Must be Included">
+    <p class="map-description">This map displays the areas where stores must be included in picking a new healthy food store location.</p>
+
+    <img src="Maps/Screenshot 2025-06-20 134156.png" alt="Areas Where Stores Must be Excluded">
+    <p class="map-description">This map displays the areas where stores must be excluded in picking a new healthy food location.</p>
+
+    <img src="Maps/Screenshot 2025-06-20 134233.png" alt="Final Candidate Areas for Healthy Food Store Developments in Philadelphia">
+    <p class="map-description">This map shows the final candidate areas for healthy food store developments in Philadelphia.</p>
+
+    <div class="map-description">
+      <p>Philadelphia seeks to promote equitable access to healthy food by supporting new retail locations in underserved neighborhoods. This map identifies optimal areas for a new healthy food store based on proximity to public transit, location within designated Empowerment Zones, and distance from existing farmers markets and healthy corner stores. After applying these criteria, the final map isolates candidate zones that meet all spatial requirements. The largest and most viable location lies in West Philadelphia, near regional rail, in a high-priority zone, and far from existing competitors. This map provides a powerful tool for urban planners and city policymakers to allocate resources more effectively and encourage private investment.</p>
+      <p><strong>GIS Tools/Skills Used:</strong></p>
+      <ul>
+        <li>Buffer analysis (2,000 ft around transit, 1,200 ft exclusion for existing stores)</li>
+        <li>Union and Intersect tools to isolate overlap between buffers and Empowerment Zones</li>
+        <li>Erase tool to remove excluded areas</li>
+        <li>Field Calculator to quantify area and rank candidate zones</li>
+        <li>Symbology, labeling, and layout design for decision-ready visualization</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <hr />
+    <p>© 2025 Nicholas Salerno | GUS 5062 | Contact: nick.salerno@temple.edu</p>
+  </footer>
+</body>
+</html>
